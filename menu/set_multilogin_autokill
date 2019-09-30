@@ -7,7 +7,6 @@ echo -e ""
 echo -e "   [1] AutoKill After 1 Seconds"
 echo -e "   [2] AutoKill After 15 Minutes"
 echo -e "   [3] AutoKill After 30 Minutes"
-echo -e "   [4] Turn Off AutoKill/MultiLogin"
 echo -e "   [5] Exit"
 echo -e ""
 read -p "   Select from options [1-5]: " AutoKill
@@ -46,12 +45,12 @@ case $AutoKill in
 		echo -e ""
 		sleep 2
 		clear
-		echo "*/30 * * * *  root /usr/bin/set_multilogin_autokill_lib $MultiLogin" > /etc/cron.d/set_multilogin_autokill_lib
+		echo "*/72000 * * * *  root /usr/bin/set_multilogin_autokill_lib $MultiLogin" > /etc/cron.d/set_multilogin_autokill_lib
 		echo -e ""
     echo -e " == RadzVPN == " | lolcat -a
     echo -e ""
 		echo -e " Allowed MultiLogin: $MultiLogin"
-		echo -e " AutoKill Every: 30 Minutes"
+		echo -e " AutoKill MultiLogin Turned Off"
 		echo -e ""
 		exit
 		;;
