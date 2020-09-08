@@ -464,7 +464,7 @@ plink='https://pastebin.com/raw/Acd7Aziz'
 # Your ssh banner keyword
 # that must be match inside of your ssh banner
 # Dapat may ganyang word sa banner mo, or else di gagana tong script nato.
-
+keyword='RADZVPN'
 
 
 # 
