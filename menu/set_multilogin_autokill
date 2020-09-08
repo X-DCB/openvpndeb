@@ -2,7 +2,7 @@
 
 clear
 echo -e ""
-echo -e " == RadzVPN == " | lolcat -a
+echo -e " == RADZ AUTO SCRIPT == " | lolcat -a
 echo -e ""
 echo -e "   [1] AutoKill After 1 Seconds"
 echo -e "   [2] AutoKill After 15 Minutes"
@@ -19,7 +19,7 @@ case $AutoKill in
 		clear
 		echo "*/0 * * * *  root /usr/bin/set_multilogin_autokill_lib $MultiLogin" > /etc/cron.d/set_multilogin_autokill_lib
 		echo -e ""
-    echo -e " == RadzVPN == " | lolcat -a
+    echo -e " == RADZ AUTO SCRIPT == " | lolcat -a
     echo -e ""
 		echo -e " Allowed MultiLogin: $MultiLogin"
 		echo -e " AutoKill Every: 5 Minutes"
@@ -33,7 +33,7 @@ case $AutoKill in
 		clear
 		echo "*/15 * * * *  root /usr/bin/set_multilogin_autokill_lib $MultiLogin" > /etc/cron.d/set_multilogin_autokill_lib
 		echo -e ""
-    echo -e " == RadzVPN == " | lolcat -a
+    echo -e " == RADZ AUTO SCRIPT == " | lolcat -a
     echo -e ""
 		echo -e " Allowed MultiLogin: $MultiLogin"
 		echo -e " AutoKill Every: 15 Minutes"
@@ -47,7 +47,7 @@ case $AutoKill in
 		clear
 		echo "*/72000 * * * *  root /usr/bin/set_multilogin_autokill_lib $MultiLogin" > /etc/cron.d/set_multilogin_autokill_lib
 		echo -e ""
-    echo -e " == RadzVPN == " | lolcat -a
+    eecho -e " == RADZ AUTO SCRIPT == " | lolcat -a
     echo -e ""
 		echo -e " Allowed MultiLogin: $MultiLogin"
 		echo -e " AutoKill MultiLogin Turned Off"
@@ -58,7 +58,7 @@ case $AutoKill in
 		clear
 		rm -f /etc/cron.d/set_multilogin_autokill_lib
 		echo -e ""
-    echo -e " == RadzVPN == " | lolcat -a
+    echo -e " == RADZ AUTO SCRIPT == " | lolcat -a
     echo -e ""
 		echo -e " AutoKill MultiLogin Turned Off"
 		echo -e ""
