@@ -459,7 +459,7 @@ cat <<'EOF'> /etc/tagongfolder/sshbanner.bash
 #!/bin/bash
 
 # Your ssh banner pastebin copy
-plink='https://pastebin.com/raw/iU2uc1fY'
+plink='https://pastebin.com/raw/Acd7Aziz'
 
 # Your ssh banner keyword
 # that must be match inside of your ssh banner
