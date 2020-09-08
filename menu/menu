@@ -2,7 +2,7 @@
 clear
 
 echo -e ""
-echo -e " \e[96mRADZ SCRIPTn"
+echo -e "RADZ SCRIPT"
 echo -e ""
 echo -e "Commands:"
 echo -e "accounts"
