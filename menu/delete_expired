@@ -12,7 +12,7 @@ userdel -r $user  &> /dev/null
 done
 clear
 echo -e ""
-echo -e " ==RadzVPN== "
+echo -e " == RADZ AUTO SCRIPT == "
 echo -e ""
 echo -e "  All Expired Users Has Been Deleted"
 echo -e ""
