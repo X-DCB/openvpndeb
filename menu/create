@@ -46,7 +46,7 @@ echo -e "  Account Expiry: $Expiration_Display"
 echo -e ""
 echo -e "  Host/IP: "$MYIP
 echo -e "  OpenSSH Port: "$opensshport
-echo -e "  Dropbear Port: "$dropbearport
+echo -e "  Dropbear Port: 550
 echo -e "  SSL Port: "$stunnel4port
 echo -e "  Proxy Ports: "$squidport
 echo -e "  OpenVPN Port: "$openvpnport
