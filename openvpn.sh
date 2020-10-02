@@ -451,38 +451,7 @@ echo 'Use menu to create accounts'
 echo 'OCS panel http://'"$IP"':88'
 echo 'Openvpn Monitoring http://'"$IP"':89'
 history -c
-
 apt install cron dos2unix curl -y -qq
-
-mkdir /etc/tagongfolder
-cat <<'EOF'> /etc/tagongfolder/sshbanner.bash
-#!/bin/bash
-
-# Your ssh banner pastebin copy
-plink='https://pastebin.com/raw/Acd7Aziz'
-
-# Your ssh banner keyword
-# that must be match inside of your ssh banner
-# Dapat may ganyang word sa banner mo, or else di gagana tong script nato.
-keyword='RADZVPN'
-
-
-# 
-curl -4sL "$plink" > /tmp/raw.txt
-dos2unix /tmp/raw.txt &> /dev/null
-
-if grep -qs "$keyword" /tmp/raw.txt; then
- echo -e "ssh banner is still unchanged."
- else
- curl -4sSL "$plink" > /etc/banner
- systemctl restart ssh
- systemctl restart dropbear
- systemctl restart stunnel4
-fi
-EOF
-
-echo -e "* \t * *\troot\t/bin/bash /etc/tagongfolder/sshbanner.bash" >> /etc/crontab
-
 service cron restart
 
 exit 0
